@@ -4,5 +4,5 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled main.cpp glad.c tempshade.h)
+add_executable(untitled main.cpp glad.c tempshade.h img_implementation.cpp)
 target_link_libraries( untitled glew32s glfw3 gdi32 opengl32)
