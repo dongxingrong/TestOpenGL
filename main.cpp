@@ -8,6 +8,7 @@
 #include "tempshade.h"
 #include <stb_image.h>
 #include "./texture/texture.cpp"
+#include "./transformation/CusTransformation.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -41,10 +42,13 @@ int main()
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    Texture texture;
+//    Texture texture;
 //    texture.show(window);
 //texture.practice_three(window);
-    texture.practice_fourth(window);
+//    texture.practice_fourth(window);
+
+    Transformation transformation;
+    transformation.show_practice_one(window);
 
     // glad: load all OpenGL function pointers
     // ---------------------------------------
