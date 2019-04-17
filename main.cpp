@@ -48,7 +48,8 @@ int main()
 //    texture.practice_fourth(window);
 
     Transformation transformation;
-    transformation.show_practice_one(window);
+//    transformation.show_practice_one(window);
+    transformation.show_practice_two(window);
 
     // glad: load all OpenGL function pointers
     // ---------------------------------------
