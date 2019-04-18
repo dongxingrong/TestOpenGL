@@ -9,6 +9,7 @@
 #include <stb_image.h>
 #include "./texture/texture.cpp"
 #include "./transformation/CusTransformation.h"
+#include "coordinate/CusCoordinate.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -47,9 +48,12 @@ int main()
 //texture.practice_three(window);
 //    texture.practice_fourth(window);
 
-    Transformation transformation;
+//    Transformation transformation;
 //    transformation.show_practice_one(window);
-    transformation.show_practice_two(window);
+//    transformation.show_practice_two(window);
+
+    Coordinate coordinate;
+    coordinate.show_practice_one(window);
 
     // glad: load all OpenGL function pointers
     // ---------------------------------------
